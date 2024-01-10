@@ -13,7 +13,8 @@ st.sidebar.subheader('Dive into a world of insights with our dynamic Streamlit a
 
 Df = data.dropna()
 Df = Df.drop_duplicates()
-
+pd.set_option('mode.use_inf_as_na', True)
+st.set_option('deprecation.showPyplotGlobalUse', False)
 # your code goes here
 
 
