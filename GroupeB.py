@@ -40,9 +40,9 @@ Df['Calculated_Date'] = pd.to_datetime(Df['Date'], format='%d-%B-%Y')
 
 total_cost = Df['Cost'].sum()
 total_revenue = Df['Revenue'].sum()
-Mean_Customer_age = Df['Customer_Age'].mean().round(2)
+Mean_Customer_age = Df['Customer_Age'].mean().round()
 Number_of_Customers = Df['Customer_Age'].count()
-Mean_Order_Quantity= Df['Order_Quantity'].mean().round(2)
+Mean_Order_Quantity= Df['Order_Quantity'].mean().round()
 Total_Sales= Df['Order_Quantity'].sum()
 
 col1, col2, col3, col4 = st.columns(4)
